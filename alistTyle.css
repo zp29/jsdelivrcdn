@@ -38,7 +38,7 @@ body::before {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://bing.img.run/1920x1080.php); /* 背景图片，可自行替换 */
+  background-image: url(https://bing.img.run/uhd.php); /* 背景图片，可自行替换 */
   z-index: 0;
 }
 
