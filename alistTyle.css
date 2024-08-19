@@ -250,8 +250,8 @@ div#root div.body svg {
 div#root div.footer {
   display: none;
 }
-.footer {
-  width: fit-content;
+div.footer {
+  width: fit-content !important;
   padding: 0 20px;
   background: rgba(var(--mio-main), 0.2);
   border-radius: 10px;
