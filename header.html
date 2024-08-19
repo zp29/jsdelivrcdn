@@ -1,0 +1,344 @@
+<!--Alist V3建议添加的-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
+
+<script src="https://time-counter.onmicrosoft.cn/counter.js" async="" id="online-counter" interval="240" api="https://time-counter.onmicrosoft.cn/counter" room="66"></script>
+
+<!--51la统计-->
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"xxxxxxxx",ck:"xxxxxxx"})</script>
+
+<!--引入字体，全局字体使用-->
+<link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" />
+
+<!--评论系统使用的js-->
+<script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
+
+<!--不蒜子计数器-->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- Font6，自定义底部使用和看板娘使用的图标和字体文件-->
+<link type='text/css' rel="stylesheet" href="https://npm.elemecdn.com/font6pro@6.0.1/css/fontawesome.min.css" media='all'>
+<link href="https://npm.elemecdn.com/font6pro@6.0.1/css/all.min.css" rel="stylesheet">
+
+ <!--音乐播放器所用的文件-->
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://npm.elemecdn.com/meting@2.0.1/dist/Meting.min.js"></script>
+
+
+<style>
+
+
+
+    /* 
+      樱花：https://www.dmoe.cc
+      夏沫：https://cdn.seovx.com
+      搏天：https://api.btstu.cn/doc/sjbz.php
+      姬长信：https://github.com/insoxin/API
+      小歪：https://api.ixiaowai.cn/
+      保罗：https://api.paugram.com
+      墨天逸：https://api.mtyqx.cn
+      岁月小筑：https://img.xjh.me
+      东方Project：https://img.paulzzh.com
+     */
+/*白天背景图*/
+/*.hope-ui-light{
+    background-image: url("https://img.paulzzh.com") !important;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position-x:center;
+    text-align: center;
+}*/
+
+ /* 白天模式背景 */
+    .hope-ui-light {
+        background-image: url(https://xxxxxxxx) !important;
+        background-attachment: fixed;
+        background-position: 100%;
+        background-size: cover;
+        text-align: center;
+    }
+/* 黑夜模式背景 */
+    .hope-ui-dark {
+        background-image: url(https://s2.loli.net/2023/03/08/bNu3zJgXqZ8lF5s.webp) !important;
+        background-attachment: fixed;
+        background-position: 100%;
+        background-size: cover;
+        text-align: center;
+    }
+
+
+/*夜间背景图*/
+/*.hope-ui-dark {
+    background-image: url(https://cdn.seovx.com/d/?mom=302) !important;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position-x:center;
+    text-align: center;
+}*/
+
+/*主页主体框*/
+/*白天*/
+.hope-c-PJLV-igScBhH-css{
+    background: rgba(255, 255, 255, .4);
+    background-color: #ffffff72 !important;
+    backdrop-filter: saturate(180%) blur(20px)!important;
+}
+
+/*夜晚*/
+.hope-c-PJLV-iigjoxS-css{
+    background: rgba(255, 255, 255, .4);
+    background-color: #00000090 !important;
+    backdrop-filter: saturate(180%) blur(20px)!important;
+}
+
+/*搜索框*/
+.hope-c-PJLV-ikEIIxw-css{
+    background: rgba(255, 255, 255, .4);
+    background-color: #ffffff72 !important;
+    backdrop-filter: saturate(180%) blur(20px)!important;
+}
+
+/*全局字体*/
+*{
+    font-family:LXGW WenKai;
+}
+*{
+    font-weight:bold;
+}
+body {
+    font-family: LXGW WenKai;
+}
+
+/*右下角侧边栏按钮透明*/
+.hope-c-PJLV-ijgzmFG-css{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+
+/*输入栏里面跳舞的小人背景图*/
+.vedit{
+    background-image:url(https://cdn.jsdelivr.net/gh/anwen-anyi/imgAnwen/images/OuNiJiang.gif); 
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    transition:all 0.25s ease-in-out 0s;
+}
+textarea#comment-textarea:focus{
+    background-position-y:120px;
+    transition:all 0.25s ease-in-out 0s;
+}
+
+/* 白天模式Readme框体毛玻璃 */
+    .hope-c-PJLV-ikSuVsl-css{
+        background-color: #ffffff72 !important;
+        backdrop-filter: blur(8px);
+    }
+
+ /* 黑夜模式Readme框体毛玻璃 */
+    .hope-c-PJLV-iiuDLME-css{
+        background-color: #00000090 !important;
+        backdrop-filter: blur(8px);
+    }
+</style>
+
+
+<!--看板娘 -自定义大小，隐藏对话框和对话框高度-->
+<style type="text/css">
+#waifu #live2d {
+    height: 350px!important;
+    width: 350px!important;
+}
+#waifu-tips {
+    top: -60px;
+    /*display:none !important;隐藏对话框*/
+}
+</style>
+
+<!--看板娘加载指定模型-->
+<script>
+    localStorage.setItem('modelId', '24');
+    localStorage.setItem('modelTexturesId', '0');
+</script>
+
+<!--自己选左右-->
+<script src="https://api.itggg.cn/live2dnew/left/index.js"></script>
+ 
+<!--以下四个两个主用两个备用的,选一条使用即可-->
+<!--自己选左右-->
+<script src="https://api.itggg.cn/live2dnew/left/index.js"></script>
+<!--  <script src="https://api.itggg.cn/live2dnew/right/index.js"></script> -->
+
+<!--备用的，自己选左右-->
+<!-- <script src="https://luluossfile.lulufind.com/work/teacher_u20221017ce7b5991_1666420843832_19934968_file.js"></script>
+<script src="https://luluossfile.lulufind.com/work/teacher_u20221017bb6d7454_1666420849979_19584065_file.js"></script> -->
+
+<style>
+    .a1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: var(--hope-sizes-full);
+        /*padding-top: var(--hope-space-4);*/
+        padding-top: 0px;
+        padding-bottom: var(--hope-space-4);
+    }
+.a2{
+    display: flex;
+    align-items: center;
+    padding-bottom: var(--hope-space-4);
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #D3C88C;
+   }
+.a3{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #D3C88C;
+   }
+
+/*隐藏设置按钮*/
+.hope-c-PJLV-ibFwXFV-css .hope-c-PJLV:last-child{
+    display: none;
+}
+
+/*主页logo大小*/
+.hope-c-PJLV-iktMgsV-css {
+    width: auto;
+    height: 75px!important;
+    margin-top: 20px;
+}
+
+/*隐藏底部管理footer*/
+.hope-c-PJLV-ihQbspH-css{
+    display:none!important;
+}
+
+/*验证模态框*/
+.swal-overlay--show-modal .swal-modal{
+    border-radius: 30px;
+}
+</style>
+
+<style>
+/* sakana */
+html .sakana-box {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transform-origin: 65% 100%; /* 从右下开始变换 */
+}
+.sakana-box {
+    width: 500px;
+    height: 80px;
+    position: relative;
+    pointer-events: none;
+    z-index: 100;
+}
+@media screen and (max-width: 768px){
+  .sakana-box {
+display: none;
+}
+}
+</style>
+
+<style>
+/*主页两个字*/
+.hope-c-PJLV-iehpHsP-css {
+    color: wheat;
+    font-size: 18px;
+}
+
+/*音乐播放器侧边收缩*/
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px!important;
+}
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0!important;
+}
+
+/*看板娘面板侧边收缩*/
+#waifu-toggle.waifu-toggle-active {
+    margin-left: -42px;
+}
+</style>
+
+<style>
+/*左侧侧边栏目录*/
+/*白天模式*/
+ .hope-ui-light .hope-c-PJLV-ieGWMbI-css {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+/*夜间模式*/
+ .hope-ui-dark .hope-c-PJLV-ieGWMbI-css {
+    background-color:rgb(0 0 0 / 50%)!important;
+}
+/* 返回顶部 */
+ .hope-c-PJLV-ihVEsOa-css {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+.hope-ui-dark .hope-c-PJLV-ihVEsOa-css {
+    background-color:rgb(0 0 0 / 50%)!important;
+}
+
+/*正常情况未使用吸附功能*/
+/*导航条*/
+/*白天模式*/
+ .hope-ui-light .hope-c-PJLV-idaeksS-css {
+    background-color: rgba(255, 255, 255, 0.5)!important;
+    border-radius: 10px !important;
+}
+/*夜间模式*/
+ .hope-ui-dark .hope-c-PJLV-idaeksS-css {
+    background-color:rgb(0 0 0 / 50%)!important;
+    border-radius: 10px !important;
+}
+/*顶栏*/
+ .hope-c-PJLV-ikaMhsQ-css {
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+
+/* 吸附到页面顶部 */
+/*顶部*/
+ .hope-c-PJLV-icWrYmg-css {
+    background: rgba(255, 255, 255, 0) !important;
+}
+/*导航条*/
+ .hope-c-PJLV-icKsjdm-css::after {
+    background: rgba(255, 255, 255, 0) !important;
+}
+/*白天模式*/
+ .hope-ui-light .hope-c-PJLV-icKsjdm-css {
+    background-color: rgba(255, 255, 255, 0.5)!important;
+    border-radius: 10px !important;
+}
+/*夜间模式*/
+ .hope-ui-dark .hope-c-PJLV-icKsjdm-css {
+    background-color:rgb(0 0 0 / 50%)!important;
+    border-radius: 10px !important;
+}
+
+/*仅吸附导航栏*/
+/*导航条*/
+.hope-c-PJLV-ifdXShc-css::after {
+    background: rgba(255, 255, 255, 0) !important;
+}
+/*白天模式*/
+ .hope-ui-light .hope-c-hrsMRY {
+    background-color: rgba(255, 255, 255, 0.5)!important;
+    border-radius: 10px !important;
+}
+/*夜间模式*/
+ .hope-ui-dark .hope-c-hrsMRY {
+    background-color:rgb(0 0 0 / 50%)!important;
+    border-radius: 10px !important;
+}
+</style>

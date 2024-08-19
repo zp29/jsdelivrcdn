@@ -1,0 +1,266 @@
+<script src="https://time-counter.onmicrosoft.cn/counter.js" async="" id="online-counter" interval="240"
+    api="https://time-counter.onmicrosoft.cn/counter" room="666"></script>
+
+<!-- 白小猫咪-->
+<!-- 
+<script src=" https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.0.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+            jsonPath: " https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json" ,
+            "scale": 1
+        },
+        "display": {
+            "position": "right",
+            "width": 100,
+            "height": 150,
+            "hOffset": -20,
+            "vOffset": -20
+        },
+        "mobile": {
+            "show": false,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 1,
+            "opacityOnHover": 1
+        }
+    });
+</script>
+-->
+
+<!-- 网页鼠标点击特效 - 核心价值观关键字 -->
+<script>
+    (function() {
+        var a_idx = 0;
+        window.onclick = function(event) {
+            var a = new Array("❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤", "❤自由❤", "❤平等❤", "❤公正❤", "❤法治❤", "❤爱国❤", "❤敬业❤", "❤诚信❤", "❤友善❤");
+            var heart = document.createElement("b"); //创建b元素
+            heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
+            document.body.appendChild(heart).innerHTML = a[a_idx]; //将b元素添加到页面上
+            a_idx = (a_idx + 1) % a.length;
+            heart.style.cssText = "position: fixed;left:-100%;"; //给p元素设置样式
+            var f = 13, // 字体大小
+                x = event.clientX - f / 2 - 30, // 横坐标
+                y = event.clientY - f, // 纵坐标
+                c = randomColor(), // 随机颜色
+                a = 1, // 透明度
+                s = 0.8; // 放大缩小
+
+            var timer = setInterval(function() { //添加定时器
+                if (a <= 0) {
+                    document.body.removeChild(heart);
+                    clearInterval(timer);
+                } else {
+                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                        c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                        s + ");";
+                    y--;
+                    a -= 0.016;
+                    s += 0.002;
+                }
+            }, 15)
+        }
+        // 随机颜色
+        function randomColor() {
+            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+                .random() * 255)) + ")";
+        }
+    }());
+</script>
+
+<!-- 渐变背景初始化,如果要使用渐变背景把下面的那一行注释去掉即可-->
+<!-- 下面的几行都是渐变的一套,自定义头部内还有一个关联的自定义CSS -->
+<!--<canvas id="canvas-basic"></canvas> -->
+<script src="https://npm.elemecdn.com/granim@2.0.0/dist/granim.min.js"></script>
+<script>
+    var granimInstance = new Granim({
+        element: '#canvas-basic',
+        direction: 'left-right',
+        isPausedWhenNotInView: true,
+        states: {
+            "default-state": {
+                gradients: [
+                    ['#a18cd1', '#fbc2eb'],
+                    ['#fff1eb', '#ace0f9'],
+                    ['#d4fc79', '#96e6a1'],
+                    ['#a1c4fd', '#c2e9fb'],
+                    ['#a8edea', '#fed6e3'],
+                    ['#9890e3', '#b1f4cf'],
+                    ['#a1c4fd', '#c2e9fb'],
+                    ['#fff1eb', '#ace0f9']
+
+                ]
+            }
+        }
+    });
+</script>
+
+<!--<meting-js fixed="true" autoplay="false" theme="#409EFF" list-folded="true" auto="https://y.qq.com/n/yqq/playlist/7927599544.html"></meting-js>-->
+<meting-js fixed="true" autoplay="false" theme="#409EFF" list-folded="true" server="netease" type="playlist"
+    id="2346950274"></meting-js>
+
+<!--延迟加载-->
+<!--如果要写自定义内容建议都加到这个延迟加载的范围内-->
+<div id="customize" style="display: none;">
+    <div>
+
+        <br />
+        <!--开站时间开始-->
+        <div
+            style="background-color: #eee;;border-radius: 20px;bottom:10px;position:relative;width:280px;text-align:center;">
+            <script type="text/javascript">
+                function show_runtime() {
+                    window.setTimeout("show_runtime()", 1000);
+                    X = new Date("05/01/2024 00:00:00");
+                    Y = new Date();
+                    T = (Y.getTime() - X.getTime());
+                    M = 24 * 60 * 60 * 1000;
+                    a = T / M;
+                    A = Math.floor(a);
+                    b = (a - A) * 24;
+                    B = Math.floor(b);
+                    c = (b - B) * 60;
+                    C = Math.floor((b - B) * 60);
+                    D = Math.floor((c - C) * 60);
+                    runtime_span.innerHTML = "本站已运行 " + A + "天" + B + "小时" + C + "分" + D + "秒"
+                }
+                show_runtime();
+            </script>
+            <!--<span id="runtime_span"></span>-->
+        </div>
+        <div class="a3"><span id="runtime_span"></span></div>
+
+
+
+
+        <center>
+            <div style=" line-height: 20px;font-size: 12pt;font-weight: bold;">
+                <span style="color: #c3c3c3; font-weight: bold;" id="hitokoto">"天气转晴 太阳崭新 我在前进"</span>
+                <p style="margin-left:10rem;font-size:13pt;color: rgb(246 255 2);"> —— David's Cloud
+            </div>
+            <!--一言API-->
+            <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+        </center>
+
+
+        <!--<center class="dibu">
+            <div style=" line-height: 18px;font-size: 17pt;font-weight: bold;">
+                <span>
+                    <span style="color: rgb(13, 109, 252); font-weight: bold;"
+                        id="jinrishici-sentence">正在加载今日诗词....</span>
+                </span>
+            </div>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8" defer></script>-->
+
+
+
+
+
+
+
+
+        <div class="a3">
+            <div style="margin:5px;color:#e3749e;text-align: center;">©2024 By<a
+                    style="color: #D3C88C;font-size: larger;" href=""> David </a></br>
+                本站总访问量 <span id="busuanzi_value_site_pv"
+                    style="color: #D3C88C; font-weight: bold;font-size: x-large;"></span>次
+                总访客数 <span id="busuanzi_value_site_uv"
+                    style="color: #D3C88C; font-weight: bold;font-size: x-large;"></span> 人
+
+
+                当前在线 <span style="color: #D3C88C;" id="online_user"></span> 人
+                你的在线总时间<span style="color: #D3C88C;" id="online_me"></span>
+                <div style="display:none!important;">全站在线总时间: <span style="color: rgb(246 255 2);"
+                        id="online_total"></span></div>
+                </br>
+            </div>
+        </div>
+
+        <div class="a2">
+            </a>&nbsp;&nbsp;
+            <a target="_blank" href="https://vercel.com/ ">
+                <img src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio"
+                    title="本站采用双线部署，源码托管于Coding">
+            </a>&nbsp;&nbsp;
+            <a target="_blank" href="https://github.com/">
+                <img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub"
+                    title="本站项目由Gtihub托管">
+            </a>&nbsp;&nbsp;
+            <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                <img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris"
+                    title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可">
+            </a><br />
+            <div>
+
+                <!--延迟加载范围到这里结束-->
+            </div>
+
+            <!--延迟加载配套使用JS-->
+            <script>
+                let interval = setInterval(() => {
+                    if (document.querySelector(".footer")) {
+                        document.querySelector("#customize").style.display = "";
+                        clearInterval(interval);
+                    }
+                }, 200);
+            </script>
+
+            <!--默认白天 除非手动更改，否则第一次进以及刷新后默认白天-->
+            <script>window.onload = function() { localStorage.setItem("hope-ui-color-mode", "light") }</script>
+
+
+            <!-- 验证模态框 -->
+            <!-- 密码可自行对接其他API -->
+            <script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+            <script>
+                let password = "xxxxxxx";
+                if (localStorage.getItem('pan_password') == password) {
+
+                } else {
+                    checkPassword("success", "输入密码进入")
+                }
+
+                function checkPassword(ic, ti) {
+                    swal({
+                        title: "David's Cloud",
+                        text: "\n愿你有诗有梦,有坦荡的远方;愿你历遍山河,仍觉得人间值!",
+                        closeOnConfirm: false,
+                        closeOnClickOutside: false,
+                        icon: ic,
+                        button: {
+                            text: "确认",
+                        },
+                        content: {
+                            element: "input",
+                            attributes: {
+                                placeholder: "请输入密码",
+                                type: "password",
+                            },
+                        },
+                    })
+                        .then((value) => {
+                            if (value == '') {
+                                checkPassword("warning", "请输入正确的密码");
+                            } else if (value == password) {
+                                swal("欢迎！", {
+                                    button: false,
+                                });
+                                localStorage.setItem("pan_password", value);
+                            } else {
+                                checkPassword("warning", "密码错误");
+                            }
+                        });
+                }
+            </script>
+
+            <div class="sakana-box"></div>
+            <script src="https://cdn.jsdelivr.net/gh/linjiangyu2/halo/js/sakana.js"></script>
+            <script>
+                Sakana.init({
+                    el: '.sakana-box',     // 启动元素 node 或 选择器
+                    scale: .5,                // 缩放倍数
+                    canSwitchCharacter: true,      // 允许换角色
+                });
+            </script>

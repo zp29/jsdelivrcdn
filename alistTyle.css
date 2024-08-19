@@ -43,6 +43,20 @@ body::before {
   z-index: 0;
 }
 
+/* 
+  KASUIEの次元: https://docs.kasuie.cc
+  樱花：https://www.dmoe.cc
+  夏沫：https://cdn.seovx.com
+  搏天：https://api.btstu.cn/doc/sjbz.php
+  姬长信：https://github.com/insoxin/API
+  小歪：https://api.ixiaowai.cn/
+  保罗：https://api.paugram.com
+  墨天逸：https://api.mtyqx.cn
+  岁月小筑：https://img.xjh.me
+  东方Project：https://img.paulzzh.com
+ */
+
+
 @media screen and (max-width: 960px) {
   body::before {
     /* background-image: url(https://kasuie.cc/api/img/bg?type=mobile&size=regular); */
@@ -252,9 +266,12 @@ div#root div.footer {
 }
 div.footer {
   width: fit-content !important;
-  padding: 0 20px;
+  padding: 10px 20px;
   background: rgba(var(--mio-main), 0.2);
   border-radius: 10px;
+}
+div.mio-footer-main > span {
+  padding: 0 .3rem;
 }
 
 /**工具栏*/
