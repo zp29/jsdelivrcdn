@@ -9,7 +9,7 @@
   --mio-text: 0, 0, 0;
   --mio-primary: #03b482; /* 主题色 */
   --mio-primary50: 63, 194, 214;
-  --mio-main-opacity: 0.3;
+  --mio-main-opacity: 0.6;
   --hope-colors-info9: rgba(var(--mio-primary), 1);
   --hope-colors-info4: rgba(var(--mio-primary), 1);
   --hope-colors-info5: rgba(var(--mio-primary50), 1);
@@ -185,7 +185,7 @@ div#root div.body div.obj-box {
   min-height: 300px;
   max-height: calc(100vh - 170px);
   overflow-y: auto;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
 }
 
 div#root div.body div.obj-box::-webkit-scrollbar {
@@ -249,6 +249,12 @@ div#root div.body svg {
 /**底部*/
 div#root div.footer {
   display: none;
+}
+.footer {
+  width: fit-content;
+  padding: 0 20px;
+  background: rgba(var(--mio-main), 0.2);
+  border-radius: 10px;
 }
 
 /**工具栏*/
